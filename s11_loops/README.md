@@ -70,3 +70,69 @@ else:
         prtin(i) 
         i += 1
 ```
+
+
+## __For Loop :__
+
+`for` döngüsü, (bir liste, bir demet, bir sözlük, bir küme veya bir string) üzerinde yineleme yapmak için kullanılır.
+
+Print each fruit in a fruit list:
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+```
+
+
+### __Looping Through a String__
+
+Loop through the letters in the word "banana":
+
+```python
+for x in "banana":
+print(x)
+```
+
+### __The `break` Statement__
+Exit the loop when x is "banana":
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+  if x == "banana":
+    break
+```
+
+### __The `continue` Statement__
+Do not print banana:
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x)
+```
+
+### __The `range()` Function__
+```python
+for x in range(6):
+  print(x) 
+```
+
+sing the start parameter:
+```python
+for x in range(2, 6):
+  print(x)
+```
+
+### __`else` in `for` Loop__
+The `else` keyword in a `for` loop specifies a block of code to be executed when the loop is finished:
+
+
+Print all numbers from 0 to 5, and print a message when the loop has ended:
+```python
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!") 
+```
